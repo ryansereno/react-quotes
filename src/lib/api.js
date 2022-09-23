@@ -1,4 +1,5 @@
-const FIREBASE_DOMAIN = 'https://react-test-fd9c9-default-rtdb.firebaseio.com';
+import {URL} from '../keys'
+const FIREBASE_DOMAIN = URL;
 
 export async function getAllQuotes() {
   const response = await fetch(`${FIREBASE_DOMAIN}/quotes.json`);
